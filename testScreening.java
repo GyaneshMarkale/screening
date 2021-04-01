@@ -47,12 +47,12 @@ public class Test {
     StringBuilder sb = new StringBuilder();
     int num = 0;
     it count = 0;
-    for(Map.Entry<String,Integer> entry1 :: map.entrySet()){
+    for(Map.Entry<String,Integer> entry1 : map.entrySet()){
       num = entry1.getValue();
       count += num;
      }
      for(int i = 0; i < count; i++){
-       for(Map.Entry<String,Integer> entry2 :: map.entrySet()){
+       for(Map.Entry<String,Integer> entry2 : map.entrySet()){
         if (entry2.getValue() == 0) continue;
         else{
           sb.append(entry2.getKey());
